@@ -1,0 +1,328 @@
+
+/* Global */
+
+* {
+    margin: 0px;
+
+    box-sizing: border-box;
+
+    font-family: 'Lucida Console', Lucida, monospace;
+
+    text-align: center;
+
+    padding: 0px;
+
+    max-height: fit-content;
+    
+}
+
+
+/* Navigation Interactions */
+
+@keyframes ButtonHover {
+    0% {font-size: 100%}
+
+    0% {color: cyan}
+
+
+    100% {font-size: 115%}
+
+    100% {color: teal}
+}
+
+@keyframes ButtonStoppedHover {
+    0% {font-size: 115%}
+
+    0% {color: teal}
+
+
+    100% {font-size: 100%}
+
+    100% {color: cyan}
+}
+
+nav ul{
+    display: flex;
+
+    justify-content: center;
+
+    list-style-type: none;
+
+     gap: 27px;
+}
+
+nav a:hover {
+    animation-name: ButtonHover;
+    animation-duration: 1s;
+
+    font-size: 115%;
+
+    color: teal;
+}
+
+
+
+nav a {
+    animation-name: ButtonStoppedHover;
+    animation-duration: 0.5s;
+
+    font-size: 100%;
+
+    color: cyan;
+}
+
+nav a:link {
+    
+
+     text-decoration: none;
+}
+
+nav a:visited {
+    
+
+     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+
+    color: aliceblue;
+
+    font-size: 105%;
+}
+
+
+/* Body Styles (Headers, Nav and Paragraphs */
+
+
+body {
+    background-image: radial-gradient(circle at center , blue , black);
+
+    width: 100%;
+
+    height: 25%;
+}
+
+a {
+    color: deepskyblue;
+
+    transition: font-size 0.5s ease-out;
+
+    
+}
+
+.sitelogo img {
+    width: 5cm;
+
+    margin-bottom: 20px;
+}
+
+
+header {
+    padding: 10px 0px 10px 0px;
+
+    margin-bottom: 10px ;
+
+    align-items: center;
+
+    background-image: linear-gradient(to bottom , cyan , teal , blue);
+
+    color: aqua;
+}
+
+
+header nav ul {
+    display: flex;
+    
+    font-size: large;
+
+    -ms-flex-align: center;
+}
+
+body h1 {
+    text-align: center;
+
+    color: cyan ;
+
+    margin-top: 50px;
+    
+}
+
+h2 {
+    color: teal ;
+
+    
+}
+
+footer nav {
+    margin: 0px 0px 0px;
+}
+
+
+p {
+    color: skyblue;
+}
+
+p1 {
+
+    color: aqua;
+
+    text-align: center;
+
+    
+}
+
+
+
+footer {
+
+    padding: 30px 0px 20px;
+
+
+    margin-top: 7%;
+
+    background-color: teal;
+
+    background-image: linear-gradient(to top , cyan , teal , blue);
+
+    color: aqua;
+}
+
+/* Styles */
+
+.rounded {
+    margin: 10px 0px 15px;
+
+    border-radius: 100px;
+}
+
+
+.inthispage {
+    color: teal
+}
+
+.imagelists {
+    display: flex;
+    justify-content: center;
+
+    flex-direction:row;
+    
+
+    width: 100%;
+
+
+    max-width: 2500px;
+
+    height: 100%;
+
+    max-height: 950px;
+
+
+    margin: 10px auto 10px;
+
+    border: 10px 10px 100px;
+
+    flex-wrap: wrap;
+
+
+    
+}
+
+.imagelists h2 {
+    font-size: large;
+}
+
+.imagelists article {
+    width: 25%;
+
+    height: 50%;
+
+    max-width: 400px;
+
+    max-height: 400px;
+    
+    margin: auto 10px 10px;
+
+    flex-wrap: wrap;
+   
+}
+
+.imagelists h2 {
+    text-align: center;
+
+    margin: 2px 0px 2px;
+}
+
+
+.imagelists article img {
+    border-radius: 0px;
+
+    height: 50%;
+
+    max-height: 400px;
+
+    align-items: center;
+
+    width: 50%;
+    max-width: 1000px;
+}
+
+.hasbuttons article h3 {
+  background-image:linear-gradient(to right , cyan , lightgreen,  green) ;
+
+  padding : 5px 10px 5px;
+  
+  border-radius: 100px;
+
+
+}
+
+
+.listedpara {
+    margin: 50px 0px 50px;
+
+    font-size: x-large;
+}
+
+.warning h1 {
+    font-size: 100px;
+}
+
+.warning {
+
+    margin-top: 60px;
+
+    color: red;
+
+    text-wrap: wrap;
+
+    text-shadow: 20px;
+
+    font-style: italic;
+    
+
+    font-size: large;
+}
+
+.button {
+    border: 5px 1px 5px;
+
+    margin: 100px 0px 10px;
+
+    padding: 10px 1px 10px;
+
+    background-color: aquamarine;
+
+    font-size: xx-large;
+
+    color: blue;
+
+    border-radius: 50px;
+}
+
+.button a {
+    color: blue;
+
+    text-decoration:none ;
+
+}
